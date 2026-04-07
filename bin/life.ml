@@ -1,10 +1,10 @@
 (*
  * Conway's Game of Life in OCaml
  * Rules:
- *   1. Any live cell with fewer than two Alive neighbors dies (underpopulation)
- *   2. Any live cell with two or three Alive neighbors Alives on
- *   3. Any live cell with more than three Alive neighbors dies (overpopulation)
- *   4. Any dead cell with exactly three Alive neighbors becomes Alive (reproduction)
+ *   1. Any live cell with fewer than two live neighbors dies (underpopulation)
+ *   2. Any live cell with two or three live neighbors lives on
+ *   3. Any live cell with more than three live neighbors dies (overpopulation)
+ *   4. Any dead cell with exactly three live neighbors becomes live (reproduction)
  *)
 
 open Graphics
