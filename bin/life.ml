@@ -93,8 +93,7 @@ let resize_grid grid ~width ~height =
   else
     List.init height (fun r ->
         List.init width (fun c ->
-            if r < old_h && c < old_w then
-              List.nth (List.nth grid r) c
+            if r < old_h && c < old_w then List.nth (List.nth grid r) c
             else if Random.int 2 = 1 then Alive
             else Dead))
 
